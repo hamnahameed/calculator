@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div>
+  <h1 style="text-align: center; color: black;">   Calculator</h1>
+</div>
+
+<br>
+
+<div class="calc">
+     <div>
+         <input id="answer"  class="answer" type="text" >
+     </div>
+     <div>
+         <button class="clearBtn" onclick="clearResult()" style="background-color: yellow;"> C</button>
+         <button class="perBtn" onclick="getNum('%')" style="background-color:red;">%</button>
+         <button class="squBtn" onclick="square()" style="background-color:red; ">x <sup>2</sup></button>
+          <button class="delBtn" onclick="del()" style="background-color:red; width: 22%; margin: 2px;"> Del</button>
+       </div>
+
+     <div>
+         <button class="btn" onclick="getNum('7')" style="background-color: blue;">7</button>
+         <button class="btn" onclick="getNum('8')" style="background-color: blue;" >8</button>
+         <button class="btn" onclick="getNum('9')" style="background-color: blue;">9</button>
+         <button class="btn" onclick="getNum('/')" style="background-color: red;">/</button>
+    
+        </div>
+
+     <div>
+         <button class="btn" onclick="getNum('4')" style="background-color: blue;">4</button>
+         <button class="btn" onclick="getNum('5')" style="background-color: blue;">5</button>
+         <button class="btn" onclick="getNum('6')" style="background-color: blue;">6</button>
+         <button class="btn" onclick="getNum('*')" style="background-color:red;">x</button>
+     </div>
+
+     <div>
+         <button class="btn" onclick="getNum('1')" style="background-color: blue;">1</button>
+         <button class="btn" onclick="getNum('2')" style="background-color: blue;">2</button>
+         <button class="btn" onclick="getNum('3')" style="background-color: blue;">3</button>
+         <button class="btn" onclick="getNum('-')" style="background-color:red;">-</button>
+     </div>
+
+     <div>
+         <button class="btn" onclick="getNum('.') " style="background-color: red;">.</button>
+         <button class="btn" onclick="getNum('0')" style="background-color: blue;">0</button>
+         <button class="btn" onclick="getResult()" style="background-color: red;">=</button>
+         <button class="btn" onclick="getNum('+')" style="background-color: red;">+</button>
+     </div>
+
+<div>
+    <button class="trig" onclick="sin()" style="background-color: red;"> sin</button>
+    <button class="trig" onclick="cos()" style="background-color: red;">cos</button>
+    <button class="trig" onclick="tan()" style="background-color: red;">tan</button>
+    <button  class="rootBtn" onclick="root()" style="background-color: red;" > &#8730 </button>
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+  
+</body>
+<script src="app.js"></script>  
+</html>
